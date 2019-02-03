@@ -15,10 +15,10 @@
 	<script type="text/javascript">
 		document.createElement('video');document.createElement('audio');document.createElement('track');
   	</script>
-	<link href="//vjs.zencdn.net/4.7/video-js.css" rel="stylesheet">
-	<script src="//vjs.zencdn.net/4.7/video.js"></script>
+	<link href="//vjs.zencdn.net/7.3.0/video-js.min.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/7.3.0/video.min.js"></script>
 	<link type="text/css" rel="stylesheet" href="https://vjs.zencdn.net/4.5.1/video-js.css">
-	<script src="js/vjs.youtube.js"></script>
+	<script src="js/youtube.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 

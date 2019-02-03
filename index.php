@@ -6,10 +6,17 @@
 	<div class="dim"></div>
 	<div class="wrapper">
 		<div class="video-content">
-			<video muted="muted" id="index-vid" src="" class="video-js vjs-default-skin" autoplay loop width="auto" height="auto" vjs-default-skin vjs-playing vjs-fullscreen vjs-big-play-centered data-setup='{ "techOrder": ["youtube"], "src": "https://www.youtube.com/watch?v=V07InQN6hWM&feature=youtu.be" }'></video>
+			<video
+					muted="muted"
+					id="index-vid"
+					class="video-js vjs-default-skin vjs-fullscreen"
+					autoplay
+					loop
+					data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=V07InQN6hWM&feature=youtu.be"}] } '>
+				</video>
 		</div>
 	</div>
-	
+
 	<form class="login" name="input" action="loggingin.php" method="post">
 		<?php if(isset($_SESSION['logged_user'])): ?>
 			<a href="/dashboard.php" id="goto-dashboard">Go to dashboard</a>
@@ -32,7 +39,7 @@
 			<p id="terms"><a href="terms.php">Terms and Conditions</a></p>
 		</form>
 	<?php endif; ?>
-	
+
 </main>
 
 
