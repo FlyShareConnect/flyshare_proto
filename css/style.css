@@ -58,12 +58,16 @@ nav {
   height: 60px;
   position: fixed;
   top: 0;
-  background-color: #090909;
+  background-color: transparent;
   box-sizing: border-box;
   display: flex;
   padding: 20px 40px;
   justify-content: space-between;
   z-index: 1000;
+}
+
+.logo {
+  letter-spacing: 0.1em;
 }
 
 .loggedin-nav {
@@ -137,7 +141,7 @@ a:active{ color: #ffcc00; }
 #index-login{ font-size:1.2em; }
 #logout-button{ font-size:1.2em; }
 
-#index-login:hover, #logout-button:hover{ background:#0099CC; }
+#index-login:hover, #logout-button:hover{ background:#D9AE08; }
 
 #start-watch{
   font-size:1.3em;
@@ -166,8 +170,8 @@ a:active{ color: #ffcc00; }
 .index-never{ top: 56%; left: 40%; width: 16%; font-size: 1.2em; text-align: center; line-height: 1.2em; }
 #index-signup{ top: 68%; left: 43%; }
 #start-watch{ top: 76%; left: 40%; }
-#start-watch:hover{ background: #0099CC; }
-#index-signup:hover{ background: #0099CC; }
+#start-watch:hover{ background: #D9AE08; }
+#index-signup:hover{ background: #D9AE08; }
 
 .love{ color:#00e1a5; }
 
@@ -218,7 +222,7 @@ a:active{ color: #ffcc00; }
 
 .login, .signup, .platforms, .platforms-2, .theatrical{
   position: absolute;
-  left: 12%;
+  left: 5%;
   padding: 2em;
   padding-right: 2.5em;
   border-top: 2px solid #ffcc00;
@@ -230,13 +234,13 @@ a:active{ color: #ffcc00; }
 }
 
 .login{
-  background-color: rgba(16,16,16,0.9);
+  background-color: rgba(16,16,16,0.8);
   top: 100px;
   width: 250px;
 }
 
 .platforms, .platforms-2, .theatrical{
-  background-color:rgba(16,16,16,0.9);
+  background-color:rgba(16,16,16,0.8);
   left:35%;
   width:30%;
 }
@@ -315,9 +319,9 @@ input[type='checkbox']:checked {
 .login-2{ left:40%; top:40%; }
 
 #email, #passwd{
-  font-size:24px;
-  padding:7px;
-  padding-left:10px;
+  width:95%;
+  font-size: 14px;
+  padding: 0.5em;
   text-align:left;
 }
 
@@ -333,7 +337,7 @@ input[type='checkbox']:checked {
 }
 
 .signup{
-  background-color:rgba(16,16,16,0.9);
+  background-color:rgba(16,16,16,0.8);
   top:48%;
   width: 250px;
 }
@@ -344,9 +348,8 @@ input[type='checkbox']:checked {
 
 #signup-name, #signup-email, #signup-passwd, #signup-pverify{
   width:95%;
-  font-size:24px;
-  padding:0.3em;
-  padding-left:10px;
+  font-size: 14px;
+  padding: 0.5em;
   text-align:left;
 }
 
@@ -399,19 +402,23 @@ input[type=submit] {
 }
 
 #signup-button, #login-button, #goto-dashboard {
-  padding: 13px 40px;
+  padding: 11px 40px;
   margin-top: 8px;
   color: black;
   border: none;
   border-radius: 4px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0;
 }
 
-#signup-button:hover { background: #0099CC; }
-#login-button:hover{ background: #0099CC; }
-.goto-dashboard:hover{ background: #0099CC; }
+#signup-button {
+  margin-top: 12px;
+}
+
+#signup-button:hover { background: #D9AE08; }
+#login-button:hover{ background: #D9AE08; }
+.goto-dashboard:hover{ background: #D9AE08; }
 
 footer{
   position:fixed;
@@ -458,14 +465,15 @@ footer a:hover{ color:#00e6ff; }
 }
 
 #agree{ left:45%; top:85%; }
-#agree:hover{ background:#0099CC; }
+#agree:hover{ background:#D9AE08; }
 
 #terms{
   margin-top:2%;
 }
 
 #terms a {
-  color: #626262;
+  color: #969696;
+  font-size: 12px;
 }
 
 
@@ -578,4 +586,14 @@ footer a:hover{ color:#00e6ff; }
 .stream-information button:hover {
   background-color: #444545;
   cursor: pointer;
+}
+
+#login-button {
+  background-color: #504D4D;
+  color: #ffcc00;
+  font-weight: 400;
+}
+
+#login-button:hover {
+  background-color: #2E2C2C;
 }
