@@ -13,7 +13,16 @@
 <main>
 	<div class="video-wrapper">
 		<div class="media-video-content">
-			<div id="media-live-stream"></div>
+			// embed video - KCA
+			<video
+			muted="muted"
+			id="index-vid"
+			class="video-js vjs-default-skin"
+			autoplay
+			loop
+			data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=Kh883DeNl7M&feature=youtu.be"}] } '>
+			</video>
+			// embed video - KCA
 		</div>
 	</div>
 	<div class="stream-description">
