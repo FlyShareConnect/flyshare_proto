@@ -12,8 +12,8 @@ $pverify = $_POST['pverify'];
 $visible = 1;
 
 // password encryption
-$hash_format = "$2y$10$";
-$salt = "Salt22CharactersOrMore";
+$hash_format = "";
+$salt = "";
 $format_and_salt = $hash_format . $salt;
 $hash = crypt($password, $format_and_salt);
 
