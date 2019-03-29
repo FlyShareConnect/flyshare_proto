@@ -12,9 +12,17 @@
 
 <main>
 	<div class="video-wrapper">
+		<div class="video-wrapper">
 		<div class="media-video-content">
-			<div id="media-live-stream"></div>
+			<div id="media-live-stream">
+            	<center>
+            		<iframe width="840" height="630"
+src="https://www.youtube.com/embed/NHrpQ-KGcU4?controls=0">
+					</iframe>
+                </center>
+            </div>
 		</div>
+	</div>
 	</div>
 	<div class="stream-description">
 		<section class="stream-profile">

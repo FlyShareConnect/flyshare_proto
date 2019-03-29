@@ -71,7 +71,15 @@ nav {
 }
 
 .loggedin-nav {
-  box-shadow: 0 1px 7px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 7px 3px rgba(0, 0, 0, 0.1);
+}
+
+.loggedin-nav a:link {
+  color: #636363;
+}
+
+.loggedin-nav a:visited {
+  color: #636363;
 }
 
 a:link{ text-decoration: none; color: #ffcc00; }
